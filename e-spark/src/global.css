@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
 }
 
 :root {
@@ -9,22 +12,6 @@
     --corAzulClaro: #CAF0F8;
     --corAzulTexto: #0C3340;
     --corCinzaEscuro: #4D4D4D;
+    --corCianoAzul: #20c997;
 }
 
-.botao-azul {
-    background-color: var(--corAzulPrincipal);
-    color: #FFFFFF;
-    text-align: center;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px #bcc9df;
-}
-
-.botao-cinza {
-    background-color: var(--corCinzaEscuro);
-    color: #000000;
-    text-align: center;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px #bcc9df;
-}
