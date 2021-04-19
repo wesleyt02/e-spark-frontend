@@ -1,0 +1,23 @@
+.container-left-menu {
+    display: flex;
+    position: fixed;
+    background-color: var(--background-color-menu);
+    min-height: 250px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container-left-menu ul li {
+    width: 100%;
+    padding: 3px 0;
+    list-style: none;
+}
+
+.container-left-menu ul li img {
+    width: 25px;
+    height: 25px;
+}
