@@ -4,8 +4,8 @@ import UserIcon from '../../images/user.svg';
 import { AuthContext } from '../../providers/auth';
 
 const Logout = () => {
-    const { setIsLoginActive, isCadastroActive, setIsCadastroActive} = useContext(AuthContext);
-    
+    const { setIsLoginActive, isCadastroActive, setIsCadastroActive } = useContext(AuthContext);
+
     function handleClickJoin() {
         setIsLoginActive(true);
     }
@@ -16,11 +16,11 @@ const Logout = () => {
     }
 
     return (
-        <>  
+        <>
             <label htmlFor="account-checkbox" className="user-icon-label">
-                <img src={UserIcon} alt=""/>
+                <img src={UserIcon} alt="" />
             </label>
-            
+
             <input type="checkbox" id="account-checkbox" hidden />
             <label htmlFor="account-checkbox" className="label-entrar"> Entrar </ label>
             <ul>

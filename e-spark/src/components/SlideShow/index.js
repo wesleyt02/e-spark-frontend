@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './slideshow.css'
-
 import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
+import 'react-slideshow-image/dist/styles.css';
+
+import './slideshow.css';
 
 const SlideShow = () => {
 

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './scrollCategory.css';
-
 import leftArrowIcon from '../../images/left-arrow.svg';
 import rightArrowIcon from '../../images/right-arrow.svg';
+
+import './scrollCategory.css';
 
 const ScrollCategory = () => {
 
@@ -23,13 +23,13 @@ const ScrollCategory = () => {
 
     return (
         <div className="container-scroll-category">
-            <img src={leftArrowIcon} alt=""/>
+            <img src={leftArrowIcon} alt="" />
             <div className="scroll-category-item" onWheel={handleWheel}>
-                {categoryCars.map((item, index) => <div className="item-scroll" key={index}>{item}</div>)}            
+                {categoryCars.map((item, index) => <div className="item-scroll" key={index}>{item}</div>)}
             </div>
-            <img src={rightArrowIcon} alt=""/>
+            <img src={rightArrowIcon} alt="" />
         </div>
-        
+
     )
 }
 

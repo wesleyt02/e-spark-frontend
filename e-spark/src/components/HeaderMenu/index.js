@@ -16,20 +16,20 @@ const HeaderMenu = () => {
                     <img src={LogoIcon} alt="logo" />
                 </li>
                 <li className="ul-li-header-menu">
-                    <SearchBar/>
+                    <SearchBar />
                 </li>
                 <li className="ul-li-header-menu">
                     <ul className="ul-item">
                         <li className="li-item">
-                            <img src={ContatoIcon} alt=""/>
+                            <img src={ContatoIcon} alt="" />
                             <p className="header-p">Entre em contato</p>
                         </li>
                         <li className="li-item">
-                            <img src={CompanhiaIcon} alt=""/>
+                            <img src={CompanhiaIcon} alt="" />
                             <p className="header-p">Quem somos</p>
                         </li>
                         <li className="li-item li-item-account">
-                            <Logout/>
+                            <Logout />
                         </li>
                     </ul>
                 </li>
