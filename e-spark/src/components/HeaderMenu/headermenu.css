@@ -46,7 +46,7 @@
     align-items: center;
 }
 
-.ul-li-header-menu .ul-item li p {
+.ul-li-header-menu .ul-item li .header-p {
 	display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -91,6 +91,10 @@
 
 .li-item.li-item-account {
     position: relative;
+}
+
+.label-entrar {
+    cursor: pointer;
 }
 
 .li-item.li-item-account ul {

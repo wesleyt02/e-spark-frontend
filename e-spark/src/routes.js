@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Cadastro from './pages/Cadastro';
+import { AuthProvider } from '../src/providers/auth'
 
-export default function Routes(){
-    return(
+import Home from './pages/Home';
+
+export default function Routes() {
+    return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/Login" component={Login}/>
-                <Route path="/Cadastro" component={Cadastro}/>
+                <AuthProvider>
+                    <Route path="/" exact component={Home} />
+                </AuthProvider>
             </Switch>
         </BrowserRouter>
     );

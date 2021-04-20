@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './leftmenu.css';
 
@@ -10,8 +10,16 @@ import CreditCardIcone from '../../images/credit-card.svg';
 import PointerIcone from '../../images/pointer.svg';
 
 const LeftMenu = () => {
+    const [leftMenu, setLeftMenu] = useState(false);
+
+    function showLeftMenu() {
+        window.scrollY >= 70 ? setLeftMenu(true) : setLeftMenu(false);
+    }
+
+    window.addEventListener('scroll', showLeftMenu);
+
     return (
-        <div className="container-left-menu">
+        <div className={leftMenu ? "container-left-menu active" : "container-left-menu"}>
             <ul className="ul-left-menu">
                 <li className="li-left-menu">
                     <img src={PaginaInicialIcone} alt=""/>

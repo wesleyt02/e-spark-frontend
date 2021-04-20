@@ -21,6 +21,8 @@
     --text-color: #ffffff;
     --background-item-card: #1e1e1e;
     --background-item-card-title-premium: #e9f101;
+    --background-item-card-title-premium-hover: #1e1e1e;
+    --background-item-card-title-default-hover: #1e1e1e;
     --background-item-card-title-default: #2e919b;
 }
 

@@ -22,11 +22,11 @@ const HeaderMenu = () => {
                     <ul className="ul-item">
                         <li className="li-item">
                             <img src={ContatoIcon} alt=""/>
-                            <p>Entre em contato</p>
+                            <p className="header-p">Entre em contato</p>
                         </li>
                         <li className="li-item">
                             <img src={CompanhiaIcon} alt=""/>
-                            <p>Quem somos</p>
+                            <p className="header-p">Quem somos</p>
                         </li>
                         <li className="li-item li-item-account">
                             <Logout/>
