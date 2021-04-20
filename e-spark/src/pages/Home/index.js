@@ -28,7 +28,7 @@ const Home = () => {
                     <CardCars
                         id="0"
                         title="Rimac C Two"
-                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição, Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
                         typeCar="premium" />
                     <CardCars
                         id="1"

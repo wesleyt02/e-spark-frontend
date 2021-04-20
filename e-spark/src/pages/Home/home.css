@@ -11,6 +11,7 @@
     grid-template-columns: repeat(3, 320px);
     grid-auto-rows: auto;
     grid-row-gap: 50px;
+    grid-column-gap: 20px;
 
     justify-content: center;
     align-items: center;
