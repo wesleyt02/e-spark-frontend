@@ -1,15 +1,18 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState } from 'react';
 
 export const AuthContext = createContext();
 
 export const AuthProvider = (props) => {
-    
-    const [user, setUser] = useState();
-
-    setUser({ name: 'Alef San' })
+    const [isLoginActive, setIsLoginActive] = useState(false);
+    const [isCadastroActive, setIsCadastroActive] = useState(false);
 
     return (
-        <AuthContext.Provider value={ user }>
+        <AuthContext.Provider value={{ 
+            isLoginActive, 
+            setIsLoginActive,
+            isCadastroActive, 
+            setIsCadastroActive }}>
+                
             {props.children}
         </AuthContext.Provider>
     )
