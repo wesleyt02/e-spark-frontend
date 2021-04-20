@@ -1,13 +1,17 @@
-.container-home main{
+.container-home {
+    background-color: var(--background-color-home);
+}
+
+.container-home main .container-cards-cars-home {
     width: 100%;
     min-height: 700px;
-    background-color: var(--background-color-home);
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 320px);
     grid-auto-rows: auto;
     grid-row-gap: 50px;
+    grid-column-gap: 20px;
 
     justify-content: center;
     align-items: center;
@@ -15,13 +19,13 @@
 
 
 @media(max-width: 1000px) {
-    .container-home main {
-        grid-template-columns: repeat(2, 380px);
+    .container-home main .container-cards-cars-home {
+        grid-template-columns: repeat(2, 300px);
     }
 }
 
 @media(max-width: 600px) {
-    .container-home main {
-        grid-template-columns: repeat(1, 1fr);
+    .container-home main  .container-cards-cars-home{
+        grid-template-columns: repeat(1, 260px);
     }
 }

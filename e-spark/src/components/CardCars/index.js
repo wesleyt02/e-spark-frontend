@@ -14,7 +14,7 @@ const CardCars = ({ id, title, description, typeCar }) => {
                 <img src={exempleCarIcon} alt="carro" />
             </div>
             <div className="description-car">
-                <p>{description}</p>
+                {description}
             </div>
             <div className="footer-card-car">
                 <button className={typeCar} id={id}>Sobre</button>
