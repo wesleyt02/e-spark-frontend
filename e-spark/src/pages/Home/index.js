@@ -15,7 +15,7 @@ import './home.css';
 
 const Home = () => {
 
-    const { isLoginActive, isCadastroActive} = useContext(AuthContext);
+    const { isLoginActive, isCadastroActive } = useContext(AuthContext);
 
     return (
         <div className="container-home">
@@ -24,57 +24,58 @@ const Home = () => {
             <LeftMenu />
             <ScrollCategory />
             <main>
-            <CardCars 
-                    id="0"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="premium"/>
-                <CardCars 
-                    id="1"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="default"/>
-                <CardCars 
-                    id="0"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="premium"/>
-                <CardCars 
-                    id="0"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="premium"/>
-                <CardCars 
-                    id="1"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="default"/>
-                <CardCars 
-                    id="0"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="premium"/>
-                   
-                <CardCars 
-                    id="0"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="premium"/>
-                <CardCars 
-                    id="1"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="default"/>
-                <CardCars 
-                    id="0"
-                    title="Rimac C Two"
-                    description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
-                    typeCar="premium"/>
-            
+                <div className="container-cards-cars-home">
+                    <CardCars
+                        id="0"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="premium" />
+                    <CardCars
+                        id="1"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="default" />
+                    <CardCars
+                        id="0"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="premium" />
+                    <CardCars
+                        id="0"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="premium" />
+                    <CardCars
+                        id="1"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="default" />
+                    <CardCars
+                        id="0"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="premium" />
+
+                    <CardCars
+                        id="0"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="premium" />
+                    <CardCars
+                        id="1"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="default" />
+                    <CardCars
+                        id="0"
+                        title="Rimac C Two"
+                        description="Uma breve descrição sobre o veiculo, todo carro deve ter uma descrição"
+                        typeCar="premium" />
+                </div>
             </main>
-            {isLoginActive? <Login />: null}
-            {isCadastroActive? <Cadastro />: null}
-            
+            {isLoginActive ? <Login /> : null}
+            {isCadastroActive ? <Cadastro /> : null}
+
         </div>
     );
 }

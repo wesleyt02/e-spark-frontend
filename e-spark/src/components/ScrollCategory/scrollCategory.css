@@ -1,12 +1,14 @@
 .container-scroll-category {
     width: 100%;
-    background-color: var(--background-color-home);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container-scroll-category img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 32px;
     height: 32px;
     cursor: pointer;
