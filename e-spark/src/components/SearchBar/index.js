@@ -15,14 +15,14 @@ const SearchBar = () => {
 
     return (
         <div className="container-search-bar">
-            <input list="data" className="search-bar" placeholder="search..."/>
-            <img src={SearchIcon} alt="search-bar-icon"/>
+            <input list="data" className="search-bar" placeholder="search..." />
+            <img src={SearchIcon} alt="search-bar-icon" />
             <datalist id="data">
                 {date.map((item, key) =>
                     <option key={key} value={item} />
                 )}
-            </datalist> 
-        </div>   
+            </datalist>
+        </div>
     )
 }
 

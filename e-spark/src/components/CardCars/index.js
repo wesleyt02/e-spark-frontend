@@ -4,14 +4,14 @@ import exempleCarIcon from '../../images/exemple-car.png';
 
 import './cardcars.css'
 
-const CardCars = ({id, title, description, typeCar}) => {
+const CardCars = ({ id, title, description, typeCar }) => {
     return (
-        <div className={"container-card-cars "+typeCar}>
+        <div className={"container-card-cars " + typeCar}>
             <div className="title-car">
-                <p className={"namecar "+typeCar}>{title}</p>
+                <p className={"namecar " + typeCar}>{title}</p>
             </div>
             <div className="image-car">
-                <img src={exempleCarIcon} alt="carro"/>
+                <img src={exempleCarIcon} alt="carro" />
             </div>
             <div className="description-car">
                 <p>{description}</p>
@@ -21,7 +21,7 @@ const CardCars = ({id, title, description, typeCar}) => {
                 <button className={typeCar} id={id}>Alugar</button>
             </div>
         </div>
-    )   
+    )
 }
 
 export { CardCars };
