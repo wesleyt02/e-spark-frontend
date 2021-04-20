@@ -41,8 +41,8 @@ const Login = () => {
         <>
 
         {isLoginActive ? 
-            <div className="container-login">
-                <div className="background-blur"></div>
+            <div className={isLoginActive? "container-login" : "container-login animation-close"}>
+                <div className="background-blur"></div> 
                 <div className="container-login-box">
                     <p className="close-login" onClick={closeModaLogin}>X</p>
 

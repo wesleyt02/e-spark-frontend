@@ -25,7 +25,7 @@ const ScrollCategory = () => {
         <div className="container-scroll-category">
             <img src={leftArrowIcon} alt="" />
             <div className="scroll-category-item" onWheel={handleWheel}>
-                {categoryCars.map((item, index) => <div className="item-scroll" key={index}>{item}</div>)}
+                {categoryCars.map((item, index) => <div className="item-scroll" key={index} onClick={() => alert('oi')} >{item}</div>)}
             </div>
             <img src={rightArrowIcon} alt="" />
         </div>

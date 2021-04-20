@@ -5,10 +5,12 @@ import { AuthContext } from '../../providers/auth';
 import { ScrollCategory } from '../../components/ScrollCategory/';
 import { HeaderMenu } from '../../components/HeaderMenu/';
 import { SlideShow } from '../../components/SlideShow/';
+import { Cadastro } from '../../components/Cadastro/';
 import { LeftMenu } from '../../components/LeftMenu/';
 import { CardCars } from '../../components/CardCars/';
+import { Footer } from '../../components/Footer/'
 import { Login } from '../../components/Login/';
-import { Cadastro } from '../../components/Cadastro/';
+
 
 import './home.css';
 
@@ -22,6 +24,9 @@ const Home = () => {
             <HeaderMenu />
             <SlideShow />
             <LeftMenu />
+            <h1 className="container-home-h1">
+                Escolha uma categoria
+            </h1>
             <ScrollCategory />
             <main>
                 <div className="container-cards-cars-home">
@@ -75,7 +80,7 @@ const Home = () => {
             </main>
             {isLoginActive ? <Login /> : null}
             {isCadastroActive ? <Cadastro /> : null}
-
+            <Footer />
         </div>
     );
 }

@@ -2,6 +2,10 @@
     background-color: var(--background-color-home);
 }
 
+.container-home main {
+    padding: 80px 0px 120px;
+}
+
 .container-home main .container-cards-cars-home {
     width: 100%;
     min-height: 700px;
