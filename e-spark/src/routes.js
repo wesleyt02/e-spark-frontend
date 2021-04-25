@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import { AuthProvider } from '../src/providers/auth'
+import { AuthProvider } from '../src/providers/auth';
+import { ScrollCategoryProvider } from '../src/providers/scrollCategory';
 
 import Home from './pages/Home';
 
@@ -10,7 +11,9 @@ export default function Routes() {
         <BrowserRouter>
             <Switch>
                 <AuthProvider>
-                    <Route path="/" exact component={Home} />
+                    <ScrollCategoryProvider>
+                        <Route path="/" exact component={Home} />
+                    </ScrollCategoryProvider>
                 </AuthProvider>
             </Switch>
         </BrowserRouter>
