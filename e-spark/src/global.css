@@ -8,7 +8,7 @@
 }
 
 :root {
-    --corAzulPrincipal: #023E8A;
+    /* --corAzulPrincipal: #023E8A;
     --corAzulClaro: #CAF0F8;
     --corAzulTexto: #0C3340;
     --corCinzaEscuro: #4D4D4D;
@@ -23,6 +23,18 @@
     --background-item-card-title-premium: #e9f101;
     --background-item-card-title-premium-hover: #1e1e1e;
     --background-item-card-title-default-hover: #1e1e1e;
-    --background-item-card-title-default: #2e919b;
+    --background-item-card-title-default: #2e919b; */
+
+    --background-color-menu: #6F48C9;
+    --background-color-menu-hover: #00393f;
+    --background-color-home: #2f3136;
+    --color-search-bar: #ffffff;
+    --text-color: #E6E8EB;
+    --background-login: #E6E8EB;
+    --background-item-card: #494D4B;
+    --background-item-card-title-premium: #6F48C9;
+    --background-item-card-title-premium-hover: #1e1e1e;
+    --background-item-card-title-default-hover: #1e1e1e;
+    --background-item-card-title-default: #9164FA;
 }
 

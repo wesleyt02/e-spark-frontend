@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 
 import { AuthContext } from '../../providers/auth';
+import { ScrollCategoryContext } from '../../providers/scrollCategory';
 
 import { ScrollCategory } from '../../components/ScrollCategory/';
 import { HeaderMenu } from '../../components/HeaderMenu/';
@@ -18,6 +19,7 @@ import './home.css';
 const Home = () => {
 
     const { isLoginActive, isCadastroActive } = useContext(AuthContext);
+    const { nameCategoryActive } = useContext(ScrollCategoryContext);
 
     return (
         <div className="container-home">
@@ -28,6 +30,7 @@ const Home = () => {
                 Escolha uma categoria
             </h1>
             <ScrollCategory />
+            <h1 className="container-home-h1 black">{nameCategoryActive}</h1>
             <main>
                 <div className="container-cards-cars-home">
                     <CardCars

@@ -43,7 +43,7 @@
 .container-login-box {
     z-index: 100%;
     position: absolute;
-    background-color: white;
+    background-color: var(--background-login);
     border-radius: 20px;
     width: 70%;
     min-height: 70vh;
@@ -103,6 +103,7 @@
     height: 40px;
     padding-bottom: 0px;
     font-size: 1.1rem;
+    background-color: var(--background-login);
     color: var(--background-color-menu);
 }
 
