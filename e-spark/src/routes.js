@@ -6,6 +6,7 @@ import { ScrollCategoryProvider } from '../src/providers/scrollCategory';
 import { AboutCar } from './pages/AboutCar';
 
 import Home from './pages/Home';
+import {Historico} from './pages/Historico'
 
 export default function Routes() {
     return (
@@ -14,7 +15,11 @@ export default function Routes() {
                 <AuthProvider>
                     <ScrollCategoryProvider>
                         <Route path="/" exact component={Home} />
+<<<<<<< HEAD
                         <Route path="/aboutcar" component={AboutCar} />
+=======
+                        <Route patch="/Historico" component={Historico}/>
+>>>>>>> 3ce96463d5b6e834fd67f65ea44b0da3b34110df
                     </ScrollCategoryProvider>
                 </AuthProvider>
             </Switch>
